@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dungeons & Dragons: Dungeon Master's Console</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="dnd_dmconsole.js"></script>
+	<link rel="stylesheet" type="text/css" href="dnd_dmconsole.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Dungeon Master's Console</h1>
+	<div class="dice_block">
+		<div class="btn_bay">
+			<input type="button" class="dice" data-maxval="4" value="d4">
+			<input type="button" class="dice" data-maxval="6" value="d6">
+			<input type="button" class="dice" data-maxval="8" value="d8">
+			<input type="button" class="dice" data-maxval="10" value="d10">
+			<input type="button" class="dice" data-maxval="12" value="d12">
+			<input type="button" class="dice" data-maxval="20" value="d20">
+			<input type="button" class="dice" data-maxval="100" value="d100">
+			<div id="custom_dice_bay">
+				<input type="button" class="dice" id="custom_btn" data-maxval="0" value="d">
+				<input type="text" id="custom_dice" placeholder="0">
+			</div>
+		</div>
+		<p class="dice_roll">Roll</p>
+	</div>
+
+	<div class="drop_box">
+		<div class="input_fields" id="drop_zone">Drag and Drop Monster Profile Here</div>
+		<output id="list"></output>
+		<div id="profiles">
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+Required Fields for Monster Template
+
+Number of Attacks (Max 4)
+To hit bonus per attack (these can be different)
+Damage Dice Per Attack (eg 1d4, 1d6, 2d6, etc)
+	If you like you can leave this as a damage range
+Damage Bonus Per Attack
+Crit Range
+Critical Multiplier
+Sneak Attack Damage Dice (eg 1d6, 2d6, etc)
+Bonus Damage Dice (eg, bonus fire damage or something like the bleeding on you axe for instance)
+

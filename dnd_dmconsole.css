@@ -1,0 +1,53 @@
+div {
+	border: 1px dashed black;
+}
+.drop_box:before,
+.drop_box:after{
+	border: 1px solid #ccc;
+}
+.drop_box:after{
+	clear: both;
+}
+
+#drop_zone{
+	border: 5px dashed #393939;
+	border-radius: 5px;
+	padding: 25px;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+}
+#drop_zone_list {
+	list-style-type: none;
+	margin: 0;
+}
+div.dice_block {
+	background: #ee932a;
+	border: 2px solid black;
+	margin: 0 0 20px 0;
+}
+div.btn_bay {
+	margin: 0 auto 0 auto;
+	padding: 10px;
+	width: 300px;
+	border: 2px solid black;
+}
+.dice {
+	width: 70px;
+}
+.btn_bay #custom_dice_bay{
+	display: inline;
+}
+.dice#custom_btn {
+	width: 35px;
+	margin-right: 0px;
+}
+#custom_dice {
+	width: 27px;
+	margin-left: 0px;
+	text-align: center;
+}
+.dice_roll {
+	width: 70px;
+	margin: 0 auto 0 auto;
+}
