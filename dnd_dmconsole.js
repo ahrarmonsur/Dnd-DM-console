@@ -1,17 +1,27 @@
 $(document).ready(function() {
-	$('.dice').on('click', function(){
-		var roll = parseInt($(this).data("maxval"))
-		if (roll == 0) {
+
+	// Triggers when a dice button is pressed
+	$('.dice').on('click', '.dice_btn', function(){
+		// Parses number of dice to roll
+		var numOfRolls = parseInt($(this).closest('.dice').find('.dice_num').val());
+		// Parses the type of dice
+		var roll = parseInt($(this).data("maxval"));
+		if (roll == 0) {	// checks to see if custom dice was used
 			roll = parseInt($('#custom_dice').val());
-			if (isNaN(roll) || roll < 1) {
-				alert("Please use a valid custom dice.");
-				return;
-			}
 		}
-		var roll = Math.floor(Math.random()*roll) + 1;
+		// Check for valid integers 
+		if (isNaN(roll) || isNaN(numOfRolls) || roll < 1 || numOfRolls < 1) {
+			alert("Please use valid integers greater than or equal to 1 for the dice fields");
+			return;
+		}
+		var total = 0;
+		for (var i = 0; i < numOfRolls; i++){
+			total += Math.floor(Math.random()*roll) + 1;	
+		}
 		var result_box = $(this).closest('.dice_block').find('.dice_roll');
+		// Transition animation
 		result_box.text('Rolling...');
-		setTimeout(function(){result_box.text(roll);}, 200);
+		setTimeout(function(){result_box.text(total);}, 200);
 	});
 
 	var dropZone = document.getElementById('drop_zone');

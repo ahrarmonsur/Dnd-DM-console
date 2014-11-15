@@ -11,15 +11,37 @@
 	<h1>Dungeon Master's Console</h1>
 	<div class="dice_block">
 		<div class="btn_bay">
-			<input type="button" class="dice" data-maxval="4" value="d4">
-			<input type="button" class="dice" data-maxval="6" value="d6">
-			<input type="button" class="dice" data-maxval="8" value="d8">
-			<input type="button" class="dice" data-maxval="10" value="d10">
-			<input type="button" class="dice" data-maxval="12" value="d12">
-			<input type="button" class="dice" data-maxval="20" value="d20">
-			<input type="button" class="dice" data-maxval="100" value="d100">
-			<div id="custom_dice_bay">
-				<input type="button" class="dice" id="custom_btn" data-maxval="0" value="d">
+			<div class="dice">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" data-maxval="4" value="d4">
+			</div>
+			<div class="dice">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" data-maxval="6" value="d6">
+			</div>
+			<div class="dice">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" data-maxval="8" value="d8">
+			</div>
+			<div class="dice">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" data-maxval="10" value="d10">
+			</div>
+			<div class="dice">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" data-maxval="12" value="d12">
+			</div>
+			<div class="dice">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" data-maxval="20" value="d20">
+			</div>
+			<div class="dice">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" data-maxval="100" value="d100">
+			</div>
+			<div class="dice" id="custom_dice_bay">
+				<input type="text" class="dice_num" value="1">
+				<input type="button" class="dice_btn" id="custom_btn" data-maxval="0" value="d">
 				<input type="text" id="custom_dice" placeholder="0">
 			</div>
 		</div>
